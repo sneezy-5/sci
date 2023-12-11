@@ -1,5 +1,6 @@
 @extends('theme.theme')
 @section('body')
+<body id="default_theme" class="home_1">
 
      <!-- inner page banner -->
      <div id="inner_banner" class="section inner_banner_section">

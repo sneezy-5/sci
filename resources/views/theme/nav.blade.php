@@ -52,12 +52,18 @@
                         <div id="navbar_menu">
                            <ul class="first-ul">
                               <li>
-                                 <a class="{{ request()->is('/') ? 'active' : '' }}" href="{{route('homaPage')}}">Accueil</a>
+                                 <a class="{{ request()->is('/') ? 'active' : '' }}" href="{{route('homePage')}}">Accueil</a>
                               </li>
-                              <li><a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{route('about')}}">A propso de nous</a></li>
+                              <li><a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{route('about')}}">A propos de nous</a></li>
                               <li><a class="{{ Route::currentRouteName() == 'services' ? 'active' : '' }}" href="{{route('services')}}">Services</a></li>
-                              
-                              
+                              <li><a class="{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog</a></li>
+                              <li class="has-sub"><span class="submenu-button"></span>
+                                 <a class="{{ Route::currentRouteName() == 'home.products' ? 'active' : '' }}" href="{{route('home.products')}}">Shop</a>
+                                 <ul>
+                                    <li><a href="{{route('home.products')}}">Shop List</a></li>
+                                    <li><a href="{{route('cart')}}">Shopping Cart</a></li>
+                                 </ul>
+                              </li>
                               <li><a class="{{ Route::currentRouteName() == 'contact' ? 'active' : '' }}" href="{{route('contact')}}">Contact</a></li>
                            </ul>
                         </div>

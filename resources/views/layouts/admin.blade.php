@@ -191,7 +191,33 @@
 							<li><a href="{{route('admin.newsletter')}}">Newletter</a></li>
 						</ul>
 					</li>
-
+                    <li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-library"></span><span class="mtext">Store</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="{{route('products.index')}}">Liste des produits</a></li>
+							<li><a href="{{route('products.create')}}">add produit</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-library"></span><span class="mtext">Commande</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="{{route('bookings.index')}}">Liste des commandes</a></li>
+						</ul>
+					</li>
+                    <li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-library"></span><span class="mtext">Blogs</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="{{route('blogs.index')}}">Liste des articles</a></li>
+                            <li><a href="{{route('blogs.create')}}">Create</a></li>
+						</ul>
+                        
+					</li>
 				</ul>
 			</div>
 		</div>

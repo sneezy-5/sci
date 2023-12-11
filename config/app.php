@@ -175,7 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Brian2694\Toastr\ToastrServiceProvider::class,
-
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
     ],
 
     /*
@@ -231,7 +231,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Toastr'  => Brian2694\Toastr\Facades\Toastr::class,
-        
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
 
     ],
 

@@ -201,8 +201,22 @@
              icon: image
            });
          }
+
+         
       </script>
+       <!-- zoom effect -->
+       <script src="{{asset('js/hizoom.js')}}"></script>
+      <script>
+         $('.hi1').hiZoom({
+             width: 500,
+             position: 'right'
+         });
+         $('.hi2').hiZoom({
+             width: 550,
+             position: 'right'
+         });
       <!-- google map js -->
+      </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&amp;callback=initMap"></script>
       <!-- end google map js -->
 </body>
