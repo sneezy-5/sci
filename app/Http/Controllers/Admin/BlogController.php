@@ -5,7 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\Category;
 use App\Http\Requests\BlogRequest;
+use App\Jobs\SubscriptionJob;
+use App\Mail\SubscriptionMail;
+use Illuminate\Support\Facades\Mail;
+use App\Models\Newsletter;
+
 
 class BlogController extends Controller
 {
@@ -17,7 +23,8 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::paginate(5);
-        return view('admin.blogs.blogs', compact('blogs'));
+        $categories =Category::orderBy('id', 'desc')->get();
+        return view('admin.blogs.blogs', compact('blogs','categories'));
     }
 
         /**
@@ -27,6 +34,7 @@ class BlogController extends Controller
      */
     public function create()
     {
+
         return view('admin.blogs.blog');
     }
 
@@ -50,19 +58,42 @@ class BlogController extends Controller
             $extension = $request->file('picture')->getClientOriginalExtension();
             // Filename To store
             $fileNameToStore = $filename. ''. time().'.'.$extension;
-            // Upload Image $path = 
+            // Upload Image $path =
             $request->file('picture')->storeAs('public/image', $fileNameToStore);
             // $request->file('picture')->storeAs('public/image', $fileNameToStore,['do']);
             }
-       
+
         // Else add a dummy image
         else {
             $fileNameToStore = 'noimage.jpg';
             }
             $data['picture']=$fileNameToStore;
 
-        Blog::create($data);
-        return redirect()->route('blogs.index');
+
+        try {
+            $data['slug'] = $request['title'];
+            Blog::create($data);
+            $blogs  = Blog::orderBy('id', 'desc')->paginate(5);
+
+
+
+            #3. Envoi du mail
+            //dispatch(new SubscriptionJob($data));
+            $newsletters =  Newsletter::all();
+            foreach($newsletters as $key=>$news){
+               // dd($news->adresse_mail);
+                Mail::to($news->adresse_mail)
+                ->queue(new SubscriptionMail($request->all()));
+            }
+
+        //    Mail::to("adingranarcisse211@gmail.com")
+        //    ->queue(new SubscriptionMail($request->all()));
+            return response()->json(['success' => true, 'message' => 'La post a été modifié avec succès.', 'blogs' => $blogs], 200);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement du post.', 'error' => $e->getMessage()], 500);
+        }
+
+        #return redirect()->route('blogs.index');
     }
 
       /**
@@ -73,9 +104,10 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        $product = Blog::find($id);
-       
-        return view('admin.blogs.edit_blog', compact('blog'));
+        $blog = Blog::find($id);
+        return response()->json(['success' => true,  'blog' => $blog], 200);
+
+        #return view('admin.blogs.edit_blog', compact('blog'));
     }
 
        /**
@@ -98,19 +130,24 @@ class BlogController extends Controller
             $extension = $request->file('picture')->getClientOriginalExtension();
             // Filename To store
             $fileNameToStore = $filename. ''. time().'.'.$extension;
-            // Upload Image$path = 
-            $request->file('picture')->storeAs('public/image', $fileNameToStore,'do');
+            // Upload Image$path =
+            $request->file('picture')->storeAs('public/image', $fileNameToStore);
             $data['picture']=$fileNameToStore;
             }
         // Else add a dummy image
-       
-        $data['status']=isset($request->status);
-            
+
+        try {
         Blog::find($id)->update($data);
-        return redirect()->route('blogs.index');
+        $blogs  = Blog::orderBy('id', 'desc')->paginate(5);
+
+        return response()->json(['success' => true, 'message' => 'La post a été modifié avec succès.', 'blogs' => $blogs], 200);
+    } catch (\Exception $e) {
+        return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement du post.', 'error' => $e->getMessage()], 500);
+    }
+       # return redirect()->route('blogs.index');
     }
 
-    
+
     /**
      * Remove the specified resource from storage.
      *

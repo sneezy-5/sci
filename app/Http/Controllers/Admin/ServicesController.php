@@ -15,7 +15,7 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        $services = Services::paginate(5);
+        $services = Services::orderBy('id', 'desc')->paginate(5);
         return view('admin.services.services',compact('services'));
     }
 
@@ -64,8 +64,16 @@ class ServicesController extends Controller
                 }
 
                    // dd($data);
-        Services::create($data);
-        return redirect()->route('services.index');
+    
+        try {
+
+            Services::create($data);
+            $services  = Services::orderBy('id', 'desc')->paginate(5);
+
+            return response()->json(['success' => true, 'message' => 'La catégorie a été enregistrée avec succès.', 'services' => $services], 200);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement de la catégorie.', 'error' => $e->getMessage()], 500);
+        }
 
     }
 
@@ -90,7 +98,8 @@ class ServicesController extends Controller
     public function edit($id)
     {
         $service = Services::find($id);
-        return view('admin.services.edit_service',compact('service'));
+        return response()->json(['success' => true,  'service' => $service], 200);
+        // return view('admin.services.edit_service',compact('service'));
     }
 
     /**
@@ -123,9 +132,15 @@ class ServicesController extends Controller
                 }
 
                    // dd($data);
-        Services::find($id)->update($data);
-        return redirect()->route('services.index');
+        try {
 
+            Services::find($id)->update($data);
+            $services  = Services::orderBy('id', 'desc')->paginate(5);
+
+            return response()->json(['success' => true, 'message' => 'La catégorie a été enregistrée avec succès.', 'services' => $services], 200);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement de la catégorie.', 'error' => $e->getMessage()], 500);
+        }
     }
 
     /**

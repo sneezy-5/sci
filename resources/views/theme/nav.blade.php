@@ -1,6 +1,10 @@
 
 
-
+@if(Session::has('success'))
+								<div class="alert alert-success">
+									{{ Session::get('success') }}
+								</div>
+								@endif
       <!-- loader -->
       <div class="bg_load"> <img class="loader_animation" src="{{asset('images/loaders/loader_1.png')}}" alt="#" /> </div>
       <!-- end loader -->
@@ -54,7 +58,7 @@
                               <li>
                                  <a class="{{ request()->is('/') ? 'active' : '' }}" href="{{route('homePage')}}">Accueil</a>
                               </li>
-                              <li><a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{route('about')}}">A propos de nous</a></li>
+                              <li><a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{route('about')}}">A propos</a></li>
                               <li><a class="{{ Route::currentRouteName() == 'services' ? 'active' : '' }}" href="{{route('services')}}">Services</a></li>
                               <li><a class="{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog</a></li>
                               <li class="has-sub"><span class="submenu-button"></span>

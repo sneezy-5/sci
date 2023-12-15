@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BookingController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\BlogController as BlogHomeController;
 use App\Http\Controllers\store\ProductController as ProduictController;
 use App\Http\Controllers\store\CartController;
@@ -43,7 +44,7 @@ Route::get('/cart_destroy_all',[CartController::class, 'destroyAll'])->name('des
 Route::get('/checkout',[CheckoutController::class, 'index'])->name('checkout.cart');
 
 Route::post('/checkout',[CheckoutController::class, 'store'])->name('checkout.store');
-Route::get('/search',[ProductController::class, 'search'])->name('store.search');
+Route::get('/search',[ProduictController::class, 'search'])->name('store.search');
 Route::get('/thankYou',[CheckoutController::class, 'thankyou'])->name('store.thankYou');
 Route::get('/payment',[CheckoutController::class, 'payment'])->name('store.payment');
 
@@ -53,7 +54,7 @@ Route::get('/blogdetail/{id}/',[BlogHomeController::class, 'blog_detail'])->name
 
 
 Route::middleware(['auth'])->group(function(){
-        
+
         Route::get('/admin/dashboard',[DashboardController::class, 'index']);
         Route::get('/admin/contacts',[DashboardController::class, 'messages'])->name('admin.message');
         Route::get('/admin/newsletters',[DashboardController::class, 'newsletterSucribers'])->name('admin.newsletter');
@@ -62,11 +63,13 @@ Route::middleware(['auth'])->group(function(){
         Route::resource('admin/products',ProductController::class);
         Route::resource('admin/bookings',BookingController::class);
         Route::resource('admin/blogs',BlogController::class);
+        Route::resource('admin/categories',CategoryController::class);
 
 
-   
+
+
     });
-    
+
 
 
 require __DIR__.'/auth.php';

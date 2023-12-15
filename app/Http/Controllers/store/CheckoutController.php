@@ -79,7 +79,6 @@ class CheckoutController extends Controller
         $order->phone = $request['phone'];
         $order->city = $request['city'];
         $order->adresse = $request['add'];
-        $order->address_type= $request['location'];
         $order->amount = str_replace(',', '', \Cart::subtotal())>=10000?\Cart::subtotal():str_replace(',', '', \Cart::subtotal())+1000;
         $this->updateStock();
         \Cart::destroy();

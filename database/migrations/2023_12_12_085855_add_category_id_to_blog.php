@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNewsletttersTable extends Migration
+class AddCategoryIdToBlog extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateNewsletttersTable extends Migration
      */
     public function up()
     {
-        Schema::create('newsletters', function (Blueprint $table) {
-            $table->id();
-            $table->string('adresse_mail');
-            $table->boolean('status')->default(1)->nullable();
-            $table->timestamps();
+        Schema::table('blogs', function (Blueprint $table) {
+            $table->foreignId('categories')->constrained()->onDelete('cascade')->nullable();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateNewsletttersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('newsletters');
+        Schema::table('blogs', function (Blueprint $table) {
+            //
+        });
     }
 }

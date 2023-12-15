@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('src/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/style.css')}}">
 	<link rel="stylesheet" href="{{asset('fontawesome-free-5.14.0-web/css/all.min.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
 	<script>
@@ -49,7 +50,7 @@
 		 <div class="header-left">
 			<div class="menu-icon dw dw-menu"></div>
 			<div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
-			
+
 		</div>
 		<div class="header-right">
 
@@ -179,7 +180,6 @@
 						</a>
 						<ul class="submenu">
 							<li><a href="{{route('services.index')}}">Liste des services</a></li>
-							<li><a href="{{route('services.create')}}">ajouter des services</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -197,7 +197,6 @@
 						</a>
 						<ul class="submenu">
 							<li><a href="{{route('products.index')}}">Liste des produits</a></li>
-							<li><a href="{{route('products.create')}}">add produit</a></li>
 						</ul>
 					</li>
                     <li class="dropdown">
@@ -213,10 +212,10 @@
 							<span class="micon dw dw-library"></span><span class="mtext">Blogs</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="{{route('blogs.index')}}">Liste des articles</a></li>
-                            <li><a href="{{route('blogs.create')}}">Create</a></li>
+							<li><a href="{{route('blogs.index')}}">Liste des posts</a></li>
+                            <li><a href="{{route('categories.index')}}">Liste des categories</a></li>
 						</ul>
-                        
+
 					</li>
 				</ul>
 			</div>

@@ -19,8 +19,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(5);
-        
+        $products =  Product::orderBy('id', 'desc')->paginate(5);
+
         // $produits->setPageName('product_page');
         return view('admin.products.products', compact('products'));
     }
@@ -55,21 +55,29 @@ class ProductController extends Controller
             $extension = $request->file('picture')->getClientOriginalExtension();
             // Filename To store
             $fileNameToStore = $filename. ''. time().'.'.$extension;
-            // Upload Image $path = 
+            // Upload Image $path =
             $request->file('picture')->storeAs('public/image', $fileNameToStore);
             // $request->file('picture')->storeAs('public/image', $fileNameToStore,['do']);
             }
-       
+
         // Else add a dummy image
         else {
             $fileNameToStore = 'noimage.jpg';
             }
-            $data['status']=isset($request->status);
+            // $data['status']=isset($request->status);
             $data['picture']=$fileNameToStore;
             $data['slug']=$request['title'];
 
-        Product::create($data);
-        return redirect()->route('products.index');
+
+        try {
+
+            Product::create($data);
+            $products  = Product::orderBy('id', 'desc')->paginate(5);
+
+            return response()->json(['success' => true, 'message' => 'La catégorie a été enregistrée avec succès.', 'products' => $products], 200);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement de la catégorie.', 'error' => $e->getMessage()], 500);
+        }
     }
 
     /**
@@ -93,8 +101,9 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-       
-        return view('admin.products.edit_product', compact('product'));
+        return response()->json(['success' => true,  'product' => $product], 200);
+
+        // return view('admin.products.edit_product', compact('product'));
     }
 
     /**
@@ -109,7 +118,7 @@ class ProductController extends Controller
 
         $data = $request->except(['_token','_method']);
 
-        if ($request->hasFile('picture', '_method')) {
+        if ($request->hasFile('picture')) {
             $filenameWithExt = $request->file('picture')->getClientOriginalName ();
             // Get Filename
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
@@ -117,16 +126,24 @@ class ProductController extends Controller
             $extension = $request->file('picture')->getClientOriginalExtension();
             // Filename To store
             $fileNameToStore = $filename. ''. time().'.'.$extension;
-            // Upload Image$path = 
-            $request->file('picture')->storeAs('public/image', $fileNameToStore,'do');
+            // Upload Image$path =
+            $request->file('picture')->storeAs('public/image', $fileNameToStore);
             $data['picture']=$fileNameToStore;
             }
         // Else add a dummy image
-       
-        $data['status']=isset($request->status);
-            
-        Product::find($id)->update($data);
-        return redirect()->route('products.index');
+
+        // $data['status']=isset($request->status);
+
+
+        try {
+
+            Product::find($id)->update($data);
+            $products  = Product::orderBy('id', 'desc')->paginate(5);
+
+            return response()->json(['success' => true, 'message' => 'La catégorie a été enregistrée avec succès.', 'products' => $products], 200);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Une erreur est survenue lors de l\'enregistrement de la catégorie.', 'error' => $e->getMessage()], 500);
+        }
     }
 
     /**

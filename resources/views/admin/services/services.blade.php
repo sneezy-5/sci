@@ -12,6 +12,16 @@
 						</div>
 					
 					</div>
+                    <div class="col d-flex justify-content-end align-items-end ">
+                       <span class="col text-success success"></span>
+                       <span class="col text-danger error"></span>
+                    </div>
+                    <div class="col d-flex justify-content-end align-items-end ">
+                        <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal">
+                            Ajouter
+                        </button>
+                    </div>
+                    @include('admin.services.form')
 					<table class="table">
 						<thead>
 							<tr>
@@ -28,10 +38,10 @@
 								<th scope="row">{{$service->id}}</th>
 								<td>{{$service->name}}</td>
 								<td>{{$service->description}}</td>
-								<td><img src="{{asset('storage/image/'.$service->image)}}" alt=""></td>
+								<td><img src="{{asset('storage/image/'.$service->image)}}" alt="" width="200" height="200"></td>
                                 <td>
-                            <p>
-                            <a href="{{route('services.edit',['service'=>$service->id])}}"  class="btn btn-waring"><i class="fa fa-edit"  ></i></a> 
+                                <div class="row ">
+                            <button onclick="openModalForEdit({{ $service->id }})" class="btn btn-warning mr-2"><i class="fa fa-edit"></i></button>
                             <form action="{{route('services.destroy',['service'=>$service->id])}}" method="post">
                               @method('delete')
                               @csrf
@@ -39,7 +49,7 @@
                             </form>
                          
                             
-                            </p>
+                            </div>
                 
                       
                           </td>

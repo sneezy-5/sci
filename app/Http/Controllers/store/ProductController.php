@@ -61,7 +61,7 @@ class ProductController extends Controller
                 ->orWhere('description', 'like', "%$q%")
                 ->paginate(10);
 
-        return view('store.search', compact('products','categories','all_products'));
+        return view('store.product', compact('products','all_products'));
    }
    
 }

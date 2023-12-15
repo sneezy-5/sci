@@ -8,10 +8,20 @@
 					<div class="clearfix mb-20">
 						<div class="pull-left">
 							<h4 class="text-blue h4">Prduits</h4>
-						
+
 						</div>
-					
+
 					</div>
+                    <div class="col d-flex justify-content-end align-items-end ">
+                       <span class="col text-success success"></span>
+                       <span class="col text-danger error"></span>
+                    </div>
+                    <div class="col d-flex justify-content-end align-items-end ">
+                        <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal">
+                            Ajouter
+                        </button>
+                    </div>
+                    @include('admin.products.form')
 					<table class="table">
 						<thead>
 							<tr>
@@ -30,24 +40,24 @@
 								<td>{{$product->title}}</td>
 								<td>{{$product->description}}</td>
                                 <td>{{$product->status}}</td>
-								<td><img src="{{asset('storage/image/'.$product->picture)}}" alt=""></td>
+								<td><img src="{{asset('storage/image/'.$product->picture)}}" alt="" width="200" height="200"></td>
                                 <td>
-                            <p>
-                            <a href="{{route('products.edit',['product'=>$product->id])}}"  class="btn btn-waring"><i class="fa fa-edit"  ></i></a> 
+                                <div class="row ">
+                            <button onclick="openModalForEdit({{ $product->id }})" class="btn btn-warning mr-2"><i class="fa fa-edit"></i></button>
                             <form action="{{route('products.destroy',['product'=>$product->id])}}" method="post">
                               @method('delete')
                               @csrf
                               <button type="submit"  class="btn btn-danger"><i class="fa fa-trash" ></i></button>
                             </form>
-                         
-                            
-                            </p>
-                
-                      
+
+
+                            </div>
+
+
                           </td>
 							</tr>
                             @endforeach
-						
+
 						</tbody>
 					</table>
 				</div>
