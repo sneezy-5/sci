@@ -153,16 +153,40 @@
         <th scope="row">${service.id}</th>
         <td>${service.name}</td>
         <td>${service.description}</td>
-        <td><img src="{{ asset('storage/image/') }}/${service.image}" alt="" width="200" height="200"></td>
+        <td><img src="{{ asset('storage/image/') }}/${service.image}" alt="" width="100" height="100"></td>
         <td>
-          <p>
-            <button onclick="openModalForEdit(${service.id})" class="btn btn-warning"><i class="fa fa-edit"></i></button>
-            <form action="{{ url('services') }}/${service.id}" method="post">
-              @method('delete')
-              @csrf
-              <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </form>
-          </p>
+
+
+          <div class="row ">
+                                <div class="dropdown">
+												<a
+													class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+													href="#"
+													role="button"
+													data-toggle="dropdown"
+												>
+													<i class="dw dw-more"></i>
+												</a>
+												<div
+													class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+												>
+
+													<a class="dropdown-item" href="#"
+                                                    onclick="openModalForEdit(${service.id})"
+														><i class="dw dw-edit2"></i> Edit</a
+													>
+
+                                                    <form action="{{ url('services') }}/${service.id}" method="post">
+                              @method('delete')
+                              @csrf
+                              <button class="dropdown-item btn btn-danger" type="submit">
+                                <i class="dw dw-delete-3"></i> Delete</button>
+                            </form>
+												</div>
+											</div>
+
+
+                            </div>
         </td>
       `;
 

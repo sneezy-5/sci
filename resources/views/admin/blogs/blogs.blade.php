@@ -30,8 +30,6 @@
 								<th scope="col">Nom</th>
 								<th scope="col">Categorie</th>
                                 <th scope="col">Contenu</th>
-                                <th scope="col">Mot clé</th>
-                                <th scope="col">Description</th>
 								<th scope="col">Image</th>
 								<th scope="col">Action</th>
 							</tr>
@@ -42,22 +40,40 @@
 								<th scope="row">{{$blog->id}}</th>
 								<td>{{$blog->title}}</td>
 								<td>{{$blog->categories}}</td>
-                                <td>{{$blog->content}}</td>
-                                <td>{{$blog->keyword}}</td>
-                                <td>{{$blog->description}}</td>
-								<td><img src="{{asset('storage/image/'.$blog->picture)}}" alt=""></td>
+                                <td>{!! $blog->content !!}</td>
+								<td><img src="{{asset('storage/image/'.$blog->picture)}}" alt=""  width="100" height="100"></td>
                                 <td>
+
                                 <div class="row ">
-                            <button onclick="openModalForEdit({{ $blog->id }})" class="btn btn-warning mr-2"><i class="fa fa-edit"></i></button>
-                            <form action="{{route('blogs.destroy',['blog'=>$blog->id])}}" method="post">
+                                <div class="dropdown">
+												<a
+													class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+													href="#"
+													role="button"
+													data-toggle="dropdown"
+												>
+													<i class="dw dw-more"></i>
+												</a>
+												<div
+													class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+												>
+
+													<a class="dropdown-item" href="#"
+                                                    onclick="openModalForEdit({{ $blog->id }})"
+														><i class="dw dw-edit2"></i> Edit</a
+													>
+
+                                                    <form action="{{route('blogs.destroy',['blog'=>$blog->id])}}" method="post">
                               @method('delete')
                               @csrf
-                              <button type="submit"  class="btn btn-danger"><i class="fa fa-trash" ></i></button>
+                              <button class="dropdown-item btn btn-danger" type="submit">
+                                <i class="dw dw-delete-3"></i> Delete</button>
                             </form>
+												</div>
+											</div>
 
 
-                                </div>
-
+                            </div>
 
                           </td>
 							</tr>

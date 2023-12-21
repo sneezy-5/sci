@@ -1,15 +1,16 @@
 
 
-@if(Session::has('success'))
-								<div class="alert alert-success">
-									{{ Session::get('success') }}
-								</div>
-								@endif
+
       <!-- loader -->
       <div class="bg_load"> <img class="loader_animation" src="{{asset('images/loaders/loader_1.png')}}" alt="#" /> </div>
       <!-- end loader -->
       <!-- header -->
       <header id="default_header" class="header_style_1">
+      @if(Session::has('success'))
+								<div class="alert alert-success">
+									{{ Session::get('success') }}
+								</div>
+								@endif
          <!-- header top -->
          <div class="header_top">
             <div class="container">

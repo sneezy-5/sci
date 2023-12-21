@@ -25,7 +25,7 @@ class BlogRequest extends FormRequest
     {
         return [
             'title' => ['required', 'string'],
-            'description' => ['required', 'string'],
+            'content' => ['required', 'string'],
         ];
     }
 
@@ -33,8 +33,8 @@ class BlogRequest extends FormRequest
     {
         return [
             'title.required' => 'Le titre est requis',
-            'description.required' => 'La description est requis',
-            
+            'content.required' => 'La description est requis',
+
         ];
     }
 }

@@ -5,32 +5,94 @@
 	<meta charset="utf-8">
 	<title>SCI</title>
 
-	<!-- Site favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="{{asset('vendors/images/apple-touch-icon.png')}}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{asset('vendors/images/favicon-32x32.png')}}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{asset('vendors/images/favicon-16x16.png')}}">
-
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/core.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/icon-font.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('src/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/style.css')}}">
-	<link rel="stylesheet" href="{{asset('fontawesome-free-5.14.0-web/css/all.min.css')}}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!-- Inclure le script CKEditor -->
+<!-- Basic Page Info -->
+<meta charset="utf-8" />
+		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
 
-		gtag('config', 'UA-119386393-1');
-	</script>
+		<!-- Site favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="{{asset('vendors/images/apple-touch-icon.png')}}"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="{{asset('vendors/images/favicon-32x32.png')}}"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="{{asset('vendors/images/favicon-16x16.png')}}"
+		/>
+
+		<!-- Mobile Specific Metas -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+
+		<!-- Google Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/core.css')}}" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{asset('vendors/styles/icon-font.min.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{asset('src/plugins/datatables/css/dataTables.bootstrap4.min.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{asset('src/plugins/datatables/css/responsive.bootstrap4.min.css')}}"
+		/>
+		<link rel="stylesheet" type="text/css" href="{{asset('vendors/styles/style.css')}}" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"
+		></script>
+		<script
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-GBZ3SGGX85");
+		</script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NXZMQSS");
+		</script>
+		<!-- End Google Tag Manager -->
 </head>
 <body>
 	<div class="pre-loader">
@@ -59,7 +121,7 @@
 				<div class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
 						<span class="user-icon">
-							<img src="vendors/images/photo1.jpg" alt="">
+							<img src="{{asset('vendors/images/photo1.jpg')}}" alt="">
 						</span>
 						<span class="user-name">{{auth()->user()->name}}</span>
 					</a>
@@ -67,14 +129,14 @@
 
 						<form action="{{route('logout')}}" method="post">
                 @csrf
-                <button type="submit" class=" btn btn-danger" ><i class="dw dw-logout"></i>Déconnexion</button>
+                <button type="submit" class="btn btn-danger" ><i class="dw dw-logout"></i>Déconnexion</button>
               </form>
 					</div>
 				</div>
 			</div>
-			<div class="github-link">
-				<a href="https://github.com/dropways/deskapp" target="_blank"><img src="vendors/images/github.svg" alt=""></a>
-			</div>
+			<!-- <div class="github-link">
+				<a href="https://github.com/dropways/deskapp" target="_blank"><img src="{{asset('vendors/images/github.svg')}}" alt=""></a>
+			</div> -->
 		</div>
 	</div>
 
@@ -155,9 +217,9 @@
 
 	<div class="left-side-bar">
 		<div class="brand-logo">
-			<a href="index.html">
-				<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+			<a href="/">
+				<img src="{{asset('vendors/images/deskapp-logo.svg')}}" alt="" class="dark-logo">
+				<img src="{{asset('vendors/images/deskapp-logo-white.svg')}}" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -223,9 +285,13 @@
 	</div>
 	<div class="mobile-menu-overlay"></div>
 
-	<div class="main-container">
 		@yield('content')
-	</div>
+        <div class="footer-wrap pd-20 mb-20 card-box">
+					DeskApp - sneezy
+					<a href="/" target="_blank"
+						>sneezy</a
+					>
+		</div>
 	<!-- js -->
 	<script src="{{asset('vendors/scripts/core.js')}}"></script>
 	<script src="{{asset('vendors/scripts/script.min.js')}}"></script>
@@ -237,5 +303,22 @@
 	<script src="{{asset('src/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
 	<script src="{{asset('src/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
 	<script src="{{asset('vendors/scripts/dashboard2.js')}}"></script>
+    <script src="{{asset('vendors/scripts/dashboard.js')}}"></script>
+
+		<script src="{{asset('src/plugins/apexcharts/apexcharts.min.js')}}"></script>
+		<script src="{{asset('src/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
+		<script src="{{asset('src/plugins/datatables/js/dataTables.bootstrap4.min.js')}}"></script>
+		<script src="{{asset('src/plugins/datatables/js/dataTables.responsive.min.js')}}"></script>
+		<script src="{{asset('src/plugins/datatables/js/responsive.bootstrap4.min.js')}}"></script>
+        <!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>

@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use App\Models\Services;
-use App\Models\Newsletter;
+// use App\Models\Newsletter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
-
+// use Spatie\Newsletter\Facades\Newsletter;
+use Newsletter;
 
 class Homecontroller extends Controller
 {
@@ -75,7 +76,12 @@ class Homecontroller extends Controller
 
         ]);
 
-        Newsletter::create($request->all());
+        // Newsletter::create($request->all());
+        if ( ! Newsletter::isSubscribed($request->adresse_mail) ) {
+            Newsletter::subscribe($request->adresse_mail);
+            dd('dvvevsdv');
+        }
+        // Newsletter::subscribe($request->adresse_mail);
         Session::flash('success', 'Votre suscription a été effectué avec succès!');
         return redirect()->back();
     }

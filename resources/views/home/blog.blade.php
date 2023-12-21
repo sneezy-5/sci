@@ -51,14 +51,14 @@
                         <h4>RECENT POST</h4>
                         <div class="recent_post">
                            <ul>
-                                @foreach($blogs as $blog)
-                                
+                                @foreach($blogs as $blo)
+
                                 <li>
-                                    <p class="post_head"><a href="#">{{$blog->title}}</a></p>
-                                    <p class="post_date"><i class="fa fa-calendar" aria-hidden="true"></i>  {{ $blog->created_at->format('M d, Y') }}</p>
+                                    <p class="post_head"><a href="{{route('blog_detail',['id'=>$blo->id])}}">{{$blo->title}}</a></p>
+                                    <p class="post_date"><i class="fa fa-calendar" aria-hidden="true"></i>  {{ $blo->created_at->format('M d, Y') }}</p>
                                 </li>
                                 @endforeach
-                            
+
                            </ul>
                         </div>
                      </div>
@@ -93,7 +93,7 @@
                               </ul>
                            </div>
                            <p>
-                           {{$blog->description}}
+                           {!! $blog->description !!}
                            </p>
                            <div class="bottom_info">
                               <div class="pull-left"><a class="btn sqaure_bt" href="{{route('blog_detail',['id'=>$blog->id])}}">Read More<i class="fa fa-angle-right"></i></a></div>

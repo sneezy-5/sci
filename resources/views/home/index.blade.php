@@ -1,6 +1,6 @@
 @extends('theme.theme')
 @section('body')
-<body id="default_theme" class="home_1">
+   <body id="default_theme" class="home_1">
 
   <!-- section slider -->
   <div id="slider" class="section main_slider">

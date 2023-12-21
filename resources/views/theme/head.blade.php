@@ -36,11 +36,15 @@
 
       <link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui1.css')}}"> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+      <!-- revolution slider css -->
+      <link rel="stylesheet" type="text/css" href="{{asset('revolution/css/settings.css')}}" />
+      <link rel="stylesheet" type="text/css" href="{{asset('revolution/css/layers.css')}}" />
+      <link rel="stylesheet" type="text/css" href="{{asset('revolution/css/navigation.css')}}" />
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+
    </head>
 
 

@@ -1,9 +1,11 @@
+
+<!-- <script src="https://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script> -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Poste</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -30,18 +32,20 @@
           </div>
           <div class="form-group">
             <label>Contenu</label>
-            <textarea class="form-control" name="content" id="content"></textarea>
+            <div class="min-height-200px">
+
+
+<div class="html-editor pd-20 card-box mb-30">
+
+    <textarea
+        class="ckeditor textarea_editor form-control border-radius-0"
+        placeholder="Enter text ..."
+        id="content"
+    ></textarea>
+</div>
+</div>
           </div>
-          <div class="form-group row">
-            <label class="col-sm-12 col-md-2 col-form-label">Mot clé</label>
-            <div class="col-sm-12 col-md-10">
-              <input class="form-control" type="text" placeholder="Mot clé" name="keyword" id="keywords">
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Description</label>
-            <textarea class="form-control" name="description" id="description"></textarea>
-          </div>
+         
           <div class="form-group row">
             <label class="col-sm-12 col-md-2 col-form-label">Image</label>
             <div class="col-sm-12 col-md-10">
@@ -56,6 +60,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 <style>
@@ -64,6 +69,7 @@
     border: 1px solid red;
   }
 </style>
+
 
 <script>
   var editingPostId = null; // Variable pour stocker l'ID du post en cours d'édition
@@ -81,10 +87,8 @@
         // Remplir le formulaire avec les anciennes valeurs
         document.getElementById('title').value = data.blog.title;
         document.getElementById('category_id').value = data.blog.categories;
-        document.getElementById('content').value = data.blog.content;
-        document.getElementById('keywords').value = data.blog.keyword;
-        document.getElementById('description').value = data.blog.description;
-
+        //document.getElementById('content').value = data.blog.content;
+     
         // Afficher le modal
         $('#exampleModal').modal('show');
       },
@@ -94,27 +98,22 @@
     });
   }
 
+
   function saveChanges() {
   var titleInput = document.getElementById('title');
   var categoryInput = document.getElementById('category_id');
   var contentInput = document.getElementById('content');
-  var keywordInput = document.getElementById('keywords');
-  var descriptionInput = document.getElementById('description');
   var pictureInput = document.getElementById('picture');
 
   var title = titleInput.value;
   var category_id = categoryInput.value;
   var content = contentInput.value;
-  var keyword = keywordInput.value;
-  var description = descriptionInput.value;
 
   // Créer un objet FormData pour gérer les fichiers
   var formData = new FormData();
   formData.append('title', title);
   formData.append('categories', category_id);
   formData.append('content', content);
-  formData.append('keywords', keyword);
-  formData.append('description', description);
   formData.append('picture', pictureInput.files[0]); // Ajouter le fichier image
 
   formData.append('_method', editingPostId ? 'PUT' : 'POST');
@@ -199,19 +198,42 @@
         <td>${post.title}</td>
         <td>${post.categories}</td>
         <td>${post.content}</td>
-        <td>${post.keywords}</td>
-        <td>${post.description}</td>
-        <td><img src="{{ asset('storage/image/') }}/${post.picture}" alt=""></td>
+        <td><img src="{{ asset('storage/image/') }}/${post.picture}" alt=""  width="100" height="100"></td>
         <td>
-          <p>
-            <button onclick="openModalForEdit(${post.id})" class="btn btn-warning"><i class="fa fa-edit"></i></button>
-            <form action="{{ url('blogs') }}/${post.id}" method="post">
-              @method('delete')
-              @csrf
-              <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
-            </form>
-          </p>
-        </td>
+
+
+
+        <div class="row ">
+                                <div class="dropdown">
+												<a
+													class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+													href="#"
+													role="button"
+													data-toggle="dropdown"
+												>
+													<i class="dw dw-more"></i>
+												</a>
+												<div
+													class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+												>
+
+													<a class="dropdown-item" href="#"
+                                                    onclick="openModalForEdit(${post.id})"
+														><i class="dw dw-edit2"></i> Edit</a
+													>
+
+                                                    <form action="{{ url('admin/blogs') }}/${post.id}" method="post">
+                              @method('delete')
+                              @csrf
+                              <button class="dropdown-item btn btn-danger" type="submit">
+                                <i class="dw dw-delete-3"></i> Delete</button>
+                            </form>
+												</div>
+											</div>
+
+
+                            </div>
+                            </td>
       `;
 
       tbody.appendChild(row);
