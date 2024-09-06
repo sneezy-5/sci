@@ -19,8 +19,8 @@
                      <div class="full">
                         <div class="topbar-left">
                            <ul class="list-inline">
-                              <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li>
-                              <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="#"><span class="__cf_email__" data-cfemail="660f080009261f09131402090b070f084805090b">[email&#160;protected]</span></a></span> </li>
+                              <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Siège à Abidjan, Cocody, Plateaux Dokui Djomi</span> </li>
+                              <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="#"><span class="__cf_email__" data-cfemail="660f080009261f09131402090b070f084805090b">carbonegroups@gmail.com</span></a></span> </li>
                            </ul>
                         </div>
                      </div>
@@ -48,7 +48,7 @@
                <div class="row">
                   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                      <!-- logo start -->
-                     <div class="logo"><a href="/"><img src="{{asset('images/logos/logo.png')}}" alt="logo" /></a></div>
+                     <div class="logo"><a href="/"><img src="{{asset('images/logos/logo-carbone.jpeg')}}" alt="logo" /></a></div>
                      <!-- logo end -->
                   </div>
                   <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">

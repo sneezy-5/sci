@@ -15,10 +15,10 @@
                   <div class="full">
                      <div class="title-holder">
                         <div class="title-holder-cell text-left">
-                           <h1 class="page-title">Shopping Cart</h1>
+                           <h1 class="page-title">Panier</h1>
                            <ol class="breadcrumb">
-                              <li><a href="/">Home</a></li>
-                              <li class="active">Shopping Cart</li>
+                              <li><a href="/">Accueil</a></li>
+                              <li class="active">Panier</li>
                            </ol>
                         </div>
                      </div>
@@ -36,9 +36,9 @@
                      <table class="table">
                         <thead>
                            <tr>
-                              <th>Product</th>
-                              <th>Quantity</th>
-                              <th class="text-center">Price</th>
+                              <th>Produit</th>
+                              <th>Quantite</th>
+                              <th class="text-center">Prix</th>
                               <th class="text-center">Total</th>
                               <th> </th>
                            </tr>
@@ -51,7 +51,7 @@
                                     <a class="thumbnail pull-left" href="#"> <img class="media-object" src="{{asset('storage/image/'.$row->model->picture)}}" alt="#"></a>
                                     <div class="media-body">
                                        <h4 class="media-heading"><a href="#">{{$row->name}}</a></h4>
-                                       <span>Status: </span><span class="text-success">In Stock</span>
+                                       <span>Status: </span><span class="text-success">En Stock</span>
                                     </div>
                                  </div>
                               </td>
@@ -63,36 +63,27 @@
                               <td class="col-sm-1 col-md-1 text-center">
                                  <p class="price_table  p_{{$row->rowId}}">{{$row->price}}</p>
                               </td>
-                              <td class="col-sm-1 col-md-1"><a href="{{route('destroy.cart',['id'=>$row->rowId])}}" class="bt_main"><i class="fa fa-trash"></i> Remove</a></td>
+                              <td class="col-sm-1 col-md-1"><a href="{{route('destroy.cart',['id'=>$row->rowId])}}" class="bt_main"><i class="fa fa-trash"></i> Supprimer</a></td>
                            </tr>
 
-                         
+
 							@endforeach
                         </tbody>
                      </table>
-                     <!-- <table class="table">
-                        <tbody>
-                           <tr class="cart-form">
-                              <td class="actions">
 
-                                 <input class="button" name="update_cart" value="Update cart" disabled="" >
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table> -->
                   </div>
                   <div class="shopping-cart-cart">
                      <table>
                         <tbody>
                            <tr class="head-table">
                               <td>
-                                 <h5>Cart Totals</h5>
+                                 <h5>Totals</h5>
                               </td>
                               <td class="text-right"></td>
                            </tr>
                            <tr>
                               <td>
-                                 <h4>Subtotal</h4>
+                                 <h4>Sous total</h4>
                               </td>
                               <td class="text-right">
                                  <h4 class="total_r"><?=Cart::subtotal();?> frcfa</h4>
@@ -115,7 +106,7 @@
                               </td>
                            </tr>
                            <tr>
-                              <td><button type="button" class="button"><a href="{{route('home.products')}}" style="color: white;">Continue Shopping</a></button></td>
+                              <td><button type="button" class="button"><a href="{{route('home.products')}}" style="color: white;">Continuer les achats</a></button></td>
                               <td><button class="button"><a href="{{route('checkout.cart')}}" style="color: white;">Commander</a></button></td>
                            </tr>
                         </tbody>

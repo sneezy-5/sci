@@ -15,7 +15,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- site icons -->
-      <link rel="icon" href="{{asset('images/fevicon/fevicon.png')}}" type="image/gif" />
+      <link rel="icon" href="{{asset('images/fevicon/logo-carbone.ico')}}" type="image/gif" />
       <!-- bootstrap css -->
       <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
       <!-- Site css -->

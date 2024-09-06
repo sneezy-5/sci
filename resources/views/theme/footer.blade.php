@@ -7,7 +7,14 @@
                   <div class="main-heading left_text">
                      <h2>CABONE GROUPE</h2>
                   </div>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+                  <p>
+  Nos bureaux sont ouverts : <br>
+  Du lundi au vendredi de 08h00 à 12h00 et de 13h00 à 18h00. <br>
+  Le samedi de 09h00 à 16h00. <br>
+  Et si besoin, sur rendez-vous au-delà des horaires d'ouverture. <br>
+  Pour nos clients, un service d'astreinte est ouvert 24/7.
+</p>
+
                   <ul class="social_icons">
                      <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                      <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -45,11 +52,11 @@
                      </div>
                      <div class="col-md-4">
                         <div class="main-heading left_text">
-                           <h2>Contact us</h2>
+                           <h2>Contact </h2>
                         </div>
-                        <p>123 Second Street Fifth Avenue,<br>
-                           abidjan, Cote d'ivoire<br>
-                           <span style="font-size:18px;"><a href="tel:+9876543210">+225 000000</a></span>
+                        <p>12 BP 680 ABIDJAN 12<br>
+                        Siège à Abidjan, Cocody, Plateaux Dokui Djomi<br>
+                           <span style="font-size:18px;"><a href="tel:+9876543210">+225O778788545/+225 05 76 29 29 98</a></span>
                         </p>
                         <div class="footer_mail-section">
                            <form action="{{route('suscriber')}}" method="POST">
@@ -72,7 +79,7 @@
                   </div>
                </div>
                <div class="cprt">
-                  <p>Furnish by <a href="#">sneezy.</a> All rights reserved.</p>
+                  <p> CARBONE GROUPE by <a href="#">sneezy.</a> All rights reserved.</p>
                </div>
             </div>
          </div>

@@ -346,7 +346,6 @@
                   <div class="full">
                      <div class="main_heading text_align_left">
                         <h2>Qui nous sommes</h2>
-                        <p class="large">Sed ut perspiciatis unde omnis iste natus error sit..</p>
                      </div>
                   </div>
                </div>
@@ -354,12 +353,9 @@
             <div class="row">
                <div class="col-md-12 col-lg-8 text-align_left">
                   <div class="full large_cont_p">
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit<br><br>sed
-                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur,
-                        adip isci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                        nostr um exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                        volupt ate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br>beginning of sentences are capitalized
+                     <p>
+                     L’entreprise CARBONE GROUPE a été fondée en 2023, dynamique, née d'une véritable passion pour la réalisation des pensées architecturales et d‘installations et de maintenance en sécurité électrique, électronique et informatique ;Notre savoir-faire et nos compétences reposent sur une équipe jeune motivée et hautement qualifiée.
+                     Quel que soit votre projet, l’entreprise CARBONE GROUPE vous accompagne, identifie l'ensemble de vos besoins et vous propose des solutions répondant à votre attente
                      </p>
                   </div>
                </div>
