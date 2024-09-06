@@ -13,7 +13,7 @@
                         <div class="title-holder-cell text-left">
                            <h1 class="page-title">Contact</h1>
                            <ol class="breadcrumb">
-                              <li><a href="/">Home</a></li>
+                              <li><a href="/">Accueil</a></li>
                               <li class="active">Contact</li>
                            </ol>
                         </div>
@@ -46,36 +46,36 @@
                                  <fieldset>
                                     <div class="row">
                                        <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                          <input class="field_custom" placeholder="Your Name" type="text" name="nom_complet" required />
+                                          <input class="field_custom" placeholder="Votre nom" type="text" name="nom_complet" required />
                                             @error('nom_complet')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                        </div>
                                        <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                          <input class="field_custom" placeholder="Email adress" type="email"  name="address_mail" required />
+                                          <input class="field_custom" placeholder="Email" type="email"  name="address_mail" required />
                                           @error('address_mail')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                        </div>
                                        <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                          <input class="field_custom" placeholder="Subject" type="text"  name="sujet" required />
+                                          <input class="field_custom" placeholder="Subjet" type="text"  name="sujet" required />
                                           @error('sujet')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                        </div>
                                        <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                          <input class="field_custom" placeholder="Phone number" type="text"  name="phone" required />
+                                          <input class="field_custom" placeholder="Numero de telephone" type="text"  name="phone" required />
                                           @error('phone')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                        </div>
                                        <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                          <textarea class="field_custom" placeholder="Messager"  name="message"></textarea>
+                                          <textarea class="field_custom" placeholder="Message"  name="message"></textarea>
                                           @error('message')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                        </div>
-                                       <div class="center"><input type="submit" value="SUBMIT NOW" class="btn main_bt" href="#"></div>
+                                       <div class="center"><input type="submit" value="ENVOYER" class="btn main_bt" href="#"></div>
                                     </div>
                                  </fieldset>
                               </form>

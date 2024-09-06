@@ -5,7 +5,7 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="main-heading left_text">
-                     <h2>SCI</h2>
+                     <h2>CABONE GROUPE</h2>
                   </div>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
                   <ul class="social_icons">
@@ -18,7 +18,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <div class="main-heading left_text">
-                           <h2>Additional links</h2>
+                           <h2>Lien Aditionnel</h2>
                         </div>
                         <ul class="footer-menu">
                            <li><a href="{{route('about')}}"><i class="fa fa-angle-right"></i> A propos de nous</a></li>
@@ -31,11 +31,16 @@
                            <h2>Services</h2>
                         </div>
                         <ul class="footer-menu">
-                           <li><a href="#"><i class="fa fa-angle-right"></i> Lighting</a></li>
-                           <li><a href="#"><i class="fa fa-angle-right"></i> Interior Design</a></li>
-                           <li><a href="#"><i class="fa fa-angle-right"></i> Floor Planning</a></li>
-                           <li><a href="#"><i class="fa fa-angle-right"></i> Decoration</a></li>
-                           <li><a href="#"><i class="fa fa-angle-right"></i> Furniture</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> BTP</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> INFORMATIQUE</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> ELECTRICITE</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> VIDEO SURVEILLANCE</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> SECURITE INCENDIE</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> ALRAM ANDI INTRUSION</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> CONTROLE D'ACCESS</a></li>
+                           <li><a href="#"><i class="fa fa-angle-right"></i> CCLOTURE ELECTRIQUE</a></li>
+
+
                         </ul>
                      </div>
                      <div class="col-md-4">
@@ -202,7 +207,7 @@
            });
          }
 
-         
+
       </script>
        <!-- zoom effect -->
        <script src="{{asset('js/hizoom.js')}}"></script>

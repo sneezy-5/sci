@@ -40,7 +40,7 @@ https://www.tooplate.com/view/2128-tween-agency
             <div class="container">
 
                 <a href="#" class="navbar-brand">
-                    <i class="bi-layers"></i> SCI
+                    <i class="bi-layers"></i> Carbone groupe
                 </a>
 
 

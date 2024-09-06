@@ -12,7 +12,7 @@
                         <div class="title-holder-cell text-left">
                            <h1 class="page-title">Services Detail</h1>
                            <ol class="breadcrumb">
-                              <li><a href="/">Home</a></li>
+                              <li><a href="/">Accueil</a></li>
                               <li class="active">Services Detail</li>
                            </ol>
                         </div>
@@ -37,18 +37,17 @@
                             {{$service->description}}<br>
 
                            </p>
-                           <!-- <div class="bt_cont"> <a class="btn sqaure_bt" href="{{route('service.detail',['id'=>$service->id])}}">View Services</a> </div> -->
                         </div>
                      </div>
                   </div>
                   @foreach ($services as $service  )
                   <div class="col-md-6 Services_blog margin_bottom_50">
                      <div class="full">
-                        <div class="Services_img"> <img class="img-responsive" src="images/layout_img/post-04.jpg" alt="#"> </div>
+                        <div class="Services_img"> <img class="img-responsive" src="{{asset('storage/image/'.$service->image)}}" alt="#"> </div>
                         <div class="Services_cont">
-                           <h3 class="Services_head"><a href="#">{{$service->name}}</a></h3>
+                           <h3 class="Services_head"><a href="{{route('service.detail',['id'=>$service->id])}}">{{$service->name}}</a></h3>
                            <p>{{$service->description}}</p>
-                           <div class="bt_cont"> <a class="btn sqaure_bt" href="{{route('service.detail',['id'=>$service->id])}}">View Services</a> </div>
+                           <div class="bt_cont"> <a class="btn sqaure_bt" href="{{route('service.detail',['id'=>$service->id])}}">Voir </a> </div>
                         </div>
                      </div>
                   </div>

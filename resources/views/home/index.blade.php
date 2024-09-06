@@ -12,7 +12,7 @@
                      <ul>
                         <li data-index="rs-1812" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/layout_img/slide1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Furnish slider 1" data-description="">
                            <!-- MAIN IMAGE -->
-                           <img src="images/layout_img/slide1.jpg"  alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                           <img src="images/layout_img/215702-P0H5T0-61.jpg"  alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                            <!-- LAYERS -->
                            <!-- LAYER NR. BG -->
                            <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
@@ -66,7 +66,7 @@
                               data-splitout="none"
                               data-responsive_offset="on"
                               data-elementdelay="0.05"
-                              style="z-index: 6; white-space: nowrap;">Best Furniture Design</div>
+                              style="z-index: 6; white-space: nowrap;">clôture électrique</div>
                            <!-- LAYER NR. 3 -->
                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                               id="slide-18-layer-412"
@@ -84,11 +84,11 @@
                               data-splitin="none"
                               data-splitout="none"
                               data-responsive_offset="on"
-                              style="z-index: 7; white-space: nowrap;">Available On Furnish</div>
+                              style="z-index: 7; white-space: nowrap;">Disponible sur meubler</div>
                         </li>
                         <li data-index="rs-181" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/layout_img/slide2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Furnish slider 2" data-description="">
                            <!-- MAIN IMAGE -->
-                           <img src="images/layout_img/slide2.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                           <img src="images/layout_img/view-modern-construction-site.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                            <!-- LAYERS -->
                            <!-- LAYER NR. BG -->
                            <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
@@ -142,7 +142,7 @@
                               data-splitout="none"
                               data-responsive_offset="on"
                               data-elementdelay="0.05"
-                              style="z-index: 6; white-space: nowrap;">Best Furniture Design</div>
+                              style="z-index: 6; white-space: nowrap;">Batiment</div>
                            <!-- LAYER NR. 3 -->
                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                               id="slide-18-layer-41"
@@ -162,11 +162,11 @@
                               data-splitin="none"
                               data-splitout="none"
                               data-responsive_offset="on"
-                              style="z-index: 7; white-space: nowrap;">Available On Furnish</div>
+                              style="z-index: 7; white-space: nowrap;">Disponible sur meubler</div>
                         </li>
                         <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/layout_img/slide3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Furnish slider 3" data-description="">
                            <!-- MAIN IMAGE -->
-                           <img src="images/layout_img/slide3.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                           <img src="images/layout_img/12641.jpg"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                            <!-- LAYERS -->
                            <!-- LAYER NR. BG -->
                            <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
@@ -222,7 +222,7 @@
                               data-splitout="none"
                               data-responsive_offset="on"
                               data-elementdelay="0.05"
-                              style="z-index: 6; white-space: nowrap;">Best Furniture Design</div>
+                              style="z-index: 6; white-space: nowrap;">vidéo surveillance</div>
                            <!-- LAYER NR. 3 -->
                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                               id="slide-18-layer-4"
@@ -242,7 +242,7 @@
                               data-splitin="none"
                               data-splitout="none"
                               data-responsive_offset="on"
-                              style="z-index: 7; white-space: nowrap;">Available On Furnish</div>
+                              style="z-index: 7; white-space: nowrap;">Disponible sur meubler</div>
                         </li>
                      </ul>
                      <div class="tp-static-layers"></div>
@@ -259,10 +259,11 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="full">
-                     <h4>Let us make the differences<br>Interior Design</h4>
+                     <h4>Faisons la différence
                   </div>
                   <div class="full">
-                     <a class="read-btn" href="{{route('contact')}}">Discover Now</a>
+                     <a class="read-btn" href="{{route('contact')}}">Découvrez
+                     </a>
                   </div>
                </div>
             </div>
@@ -276,7 +277,7 @@
                <div class="col-md-12">
                   <div class="full">
                      <div class="main_heading text_align_center">
-                        <h2><span>Gallery</span></h2>
+                        <h2><span>Galerie</span></h2>
                      </div>
                   </div>
                </div>
@@ -287,33 +288,51 @@
                      <div class="gallery_tab">
                         <div class="center">
                            <div class="tab_buttons">
-                              <button class="cuts_bt filter-button" data-filter="all">All Projects</button>
-                              <button class="cuts_bt filter-button" data-filter="houses">Houses</button>
-                              <button class="cuts_bt filter-button" data-filter="decoration">Decoration</button>
-                              <button class="cuts_bt filter-button" data-filter="furniture">Furniture</button>
-                              <button class="cuts_bt filter-button" data-filter="office">Office</button>
+                              <button class="cuts_bt filter-button" data-filter="all">Tous les projets</button>
+                              <button class="cuts_bt filter-button" data-filter="houses">Maisons</button>
+                              <button class="cuts_bt filter-button" data-filter="cloture">clôture électrique</button>
+                              <button class="cuts_bt filter-button" data-filter="camera">Camera</button>
+                              <button class="cuts_bt filter-button" data-filter="extinteur">Extinteur</button>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses furniture">
-                  <img src="images/layout_img/pr1.png" alt="#" class="img-responsive" />
+                  <img src="images/layout_img/AdobeStock_331266968_Preview.jpeg" alt="#" class="img-responsive" />
                </div>
-               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter decoration furniture">
-                  <img src="images/layout_img/pr2.png" alt="#" class="img-responsive" />
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cloture furniture">
+                  <img src="images/layout_img/AdobeStock_243818862_Preview.jpeg" alt="#" class="img-responsive" />
                </div>
                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses furniture">
-                  <img src="images/layout_img/pr3.png" alt="#" class="img-responsive" />
+                  <img src="images/layout_img/AdobeStock_178189389_Preview.jpeg" alt="#" class="img-responsive" />
                </div>
-               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter decoration office">
-                  <img src="images/layout_img/pr4.png" alt="#" class="img-responsive" />
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cloture office">
+                  <img src="images/layout_img/CLOTURE-ELECTRIQUE-3-1.jpg" alt="#" class="img-responsive" />
                </div>
                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses office">
-                  <img src="images/layout_img/pr5.png" alt="#" class="img-responsive" />
+                  <img src="images/layout_img/view-modern-construction-site.jpg" alt="#" class="img-responsive" />
                </div>
-               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter decoration office">
-                  <img src="images/layout_img/pr6.png" alt="#" class="img-responsive" />
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cloture office">
+                  <img src="images/layout_img/215702-P0H5T0-61.jpg" alt="#" class="img-responsive" />
+               </div>
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter camera office">
+                  <img src="images/layout_img/camera1.jpeg" alt="#" class="img-responsive" />
+               </div>
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter camera office">
+                  <img src="images/layout_img/AdobeStock_191433215_Preview.jpeg" alt="#" class="img-responsive" />
+                </div>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter extinteur office">
+                  <img src="images/layout_img/AdobeStock_210407219_Preview.jpeg" alt="#" class="img-responsive" />
+               </div>
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter extinteur office">
+                  <img src="images/layout_img/AdobeStock_738409805_Preview.jpeg" alt="#" class="img-responsive" />
+               </div>
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter extinteur office">
+                  <img src="images/layout_img/AdobeStock_735589681_Preview.jpeg" alt="#" class="img-responsive" />
+               </div>
+               <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter extinteur office">
+                  <img src="images/layout_img/AdobeStock_780014726_Preview.jpeg" alt="#" class="img-responsive" />
                </div>
             </div>
          </div>
@@ -326,7 +345,7 @@
                <div class="col-md-12">
                   <div class="full">
                      <div class="main_heading text_align_left">
-                        <h2>Who we are</h2>
+                        <h2>Qui nous sommes</h2>
                         <p class="large">Sed ut perspiciatis unde omnis iste natus error sit..</p>
                      </div>
                   </div>
@@ -350,77 +369,7 @@
       <!-- end section -->
 
       <!-- section -->
-      <div class="section padding_layout_1 testmonial_section white_fonts">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full">
-                     <div class="main_heading text_align_center">
-                        <h2 style="text-transform: none;">What Clients Say?</h2>
-                        <p class="large">Here are testimonials from clients..</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12 col-lg-2"></div>
-               <div class="col-md-12 col-lg-8">
-                  <div class="full">
-                     <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                           <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
-                           <li data-target="#testimonial_slider" data-slide-to="1"></li>
-                           <li data-target="#testimonial_slider" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <div class="testimonial-container">
-                                 <div class="testimonial-photo"> <img src="images/layout_img/client1.jpg" class="img-responsive" alt="#" width="150" height="150"> </div>
-                                 <div class="testimonial-content"> You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first.
-                                    I am really satisfied with my first laptop Services.
-                                 </div>
-                                 <div class="testimonial-meta">
-                                    <h4>Maria Anderson</h4>
-                                    <span class="testimonial-position">CFO, Tech NY</span>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <div class="testimonial-container">
-                                 <div class="testimonial-photo"> <img src="images/layout_img/client2.jpg" class="img-responsive" alt="#" width="150" height="150"> </div>
-                                 <div class="testimonial-content"> You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first.
-                                    I am really satisfied with my first laptop Services.
-                                 </div>
-                                 <div class="testimonial-meta">
-                                    <h4>Maria Anderson</h4>
-                                    <span class="testimonial-position">CFO, Tech NY</span>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <div class="testimonial-container">
-                                 <div class="testimonial-photo"> <img src="images/layout_img/client3.jpg" class="img-responsive" alt="#" width="150" height="150"> </div>
-                                 <div class="testimonial-content"> You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first.
-                                    I am really satisfied with my first laptop Services.
-                                 </div>
-                                 <div class="testimonial-meta">
-                                    <h4>Maria Anderson</h4>
-                                    <span class="testimonial-position">CFO, Tech NY</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-5">
-                  <div class="full"> </div>
-               </div>
-            </div>
-         </div>
-      </div>
+
       <!-- end section -->
     @include('components.serach')
 @endsection

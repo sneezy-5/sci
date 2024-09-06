@@ -43,7 +43,7 @@ a.btn.dark_gray_bt:focus,
 }
 
 .theme_bg {
-    background: #d7bb3e;
+    background: #3e71d7;
 }
 
 #navbar_menu > ul > li a.active,
@@ -54,7 +54,7 @@ footer p a:hover,footer p a:focus,
 .footer-menu li a:focus,
 footer ul.social_icons li a:hover,
 footer ul.social_icons li a:focus {
-    color: #d7bb3e;
+    color: #1772d4;
 }
 
 .breadcrumb li a {
@@ -63,7 +63,7 @@ footer ul.social_icons li a:focus {
 
 .btn.sqaure_bt {
     border-radius: 0;
-    background: #d7bb3e;
+    background: #1772d4;
     font-size: 18px;
     font-weight: 600;
     margin-top: 40px;
@@ -77,7 +77,7 @@ footer ul.social_icons li a:focus {
 }
 
 footer h2::after, .footer_mail-section .field button.button_custom {
-    background: #d7bb3e;
+    background: #1772d4;
 }
 
 .cprt {
@@ -211,9 +211,9 @@ button.btn.white_btn, a.btn.white_btn, button.btn.white_btn, a.btn.white_btn {
 	text-shadow: none;
 }
 
-button.btn.white_btn:hover, 
-a.btn.white_btn:hover, 
-button.btn.white_btn:hover, 
+button.btn.white_btn:hover,
+a.btn.white_btn:hover,
+button.btn.white_btn:hover,
 a.btn.white_btn:hover {
 	color: #fff;
 	text-transform: none;
@@ -221,7 +221,7 @@ a.btn.white_btn:hover {
 }
 
 .tp-bannertimer {
-    background: #d7bb3e !important;
+    background: #1772d4 !important;
 }
 
 .tp-caption.tp-shape.tp-shapewrapper.rs-parallaxlevel-0 {

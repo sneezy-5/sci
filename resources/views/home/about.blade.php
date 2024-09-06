@@ -10,10 +10,10 @@
                   <div class="full">
                      <div class="title-holder">
                         <div class="title-holder-cell text-left">
-                           <h1 class="page-title">About Us</h1>
+                           <h1 class="page-title">A propos</h1>
                            <ol class="breadcrumb">
-                              <li><a href="/">Home</a></li>
-                              <li class="active">About Us</li>
+                              <li><a href="/">Accueil</a></li>
+                              <li class="active">A propos</li>
                            </ol>
                         </div>
                      </div>
@@ -31,7 +31,7 @@
                <div class="col-md-12">
                   <div class="full">
                      <div class="main_heading text_align_left">
-                        <h2>Who we are</h2>
+                        <h2>Qui somme nous</h2>
                         <p class="large">Sed ut perspiciatis unde omnis iste natus error sit..</p>
                      </div>
                   </div>
@@ -63,10 +63,10 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="full">
-                     <h4>Let us make the differences<br>Interior Design</h4>
+                     <h4>Faisons la différence
                   </div>
                   <div class="full">
-                     <a class="read-btn" href="{{route('services')}}">Discover Now</a>
+                     <a class="read-btn" href="{{route('services')}}">Découvrez</a>
                   </div>
                </div>
             </div>

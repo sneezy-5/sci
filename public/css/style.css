@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
 		File Name: style.css
-		Template Name: furnish - Responsive HTML5 Theme 
+		Template Name: furnish - Responsive HTML5 Theme
 		Created By: htmldotdesign
 		Website: https://html.design
 		Version: 1.0
@@ -14,8 +14,8 @@
 	    3. BASIC
         4. LOADER
 	    5. HEADER
-	        - Header Top 
-	        - Menu 
+	        - Header Top
+	        - Menu
 	        - Search Bar
 	        - Side Menu
 		    - Fix Header
@@ -31,14 +31,14 @@
        11. INNER PAGE BANNER
 	   12. SIDEBAR
 	       - Sidebar Search
-	   13. BLOG	
-           - Blog Detail	
+	   13. BLOG
+           - Blog Detail
 	   14. CASE STUDIES
 	   15. SHOP
-	   16. TESTMONIAL 
+	   16. TESTMONIAL
        17. FOOTER
 	   18. INNER ALL CSS
-		
+
 	-------------------------------------------------------------------*/
 
 
@@ -824,7 +824,7 @@ hr.dottad_border {
 	display: block;
 	width: 90px;
 	height: 7px;
-	background: #d7bb3e;
+	background: #1772d4;
 	position: relative;
 	right: 0;
 	bottom: 0;
@@ -1096,7 +1096,7 @@ header .right_bt .btn {
 #navbar_menu>ul>li a.active,
 #navbar_menu>ul>li:hover>a,
 #navbar_menu>ul>li:focus>a {
-	color: #d7bb3e;
+	color: #1772d4;
 	padding-top: 16px;
 	padding-bottom: 15px;
 }
@@ -2154,9 +2154,9 @@ div.large_cont_p p {
 
 .read-btn:hover,
 .read-btn:focus {
-	border-color: #d7bb3e;
+	border-color: #1772d4;
 	color: #fff;
-	background: #d7bb3e;
+	background: #1772d4;
 }
 
 
@@ -2244,8 +2244,8 @@ div.large_cont_p p {
 
 .filter-button:hover,
 .filter-button:focus {
-	border: solid #d7bb3e 2px;
-	background: #d7bb3e;
+	border: solid #1772d4 2px;
+	background: #1772d4;
 	color: #fff;
 }
 
@@ -2297,7 +2297,7 @@ textarea.field_custom {
 }
 
 .btn.main_bt[type="submit"] {
-	background: #d7bb3e;
+	background: #1772d4;
 	padding: 0;
 	color: #fff;
 	font-weight: 700;
@@ -3328,7 +3328,7 @@ span.skill {
 
 
 /*------------------------------------------------------------------
-	16. TESTMONIAL 
+	16. TESTMONIAL
 -------------------------------------------------------------------*/
 
 .testmonial_section {
@@ -3609,12 +3609,7 @@ footer ul.social_icons {
 	position: relative;
 }
 
-.gross_layout {
-	position: relative;
-	background-position: right bottom;
-	background-size: cover;
-	background-image: url(../images/layout_img/dark_bg_img.png);
-}
+
 
 .post_time {
 	margin: 20px 0 15px;
@@ -3730,7 +3725,7 @@ footer ul.social_icons {
 }
 
 .page-title {
-	color: #d7bb3e;
+	color: #1772d4;
 	font-size: 40px;
 	font-weight: 800;
 	line-height: 45px;
@@ -4112,7 +4107,7 @@ footer ul.social_icons {
 }
 
 .product_detail .tab_bar_section ul.nav.nav-tabs li a.active {
-	background: #d7bb3e;
+	background: #1772d4;
 	color: #fff;
 }
 

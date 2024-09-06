@@ -20,7 +20,7 @@
                         <div class="topbar-left">
                            <ul class="list-inline">
                               <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li>
-                              <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="https://html.design/cdn-cgi/l/email-protection#21484f474e61584e5453454e4c40484f0f424e4c"><span class="__cf_email__" data-cfemail="660f080009261f09131402090b070f084805090b">[email&#160;protected]</span></a></span> </li>
+                              <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="#"><span class="__cf_email__" data-cfemail="660f080009261f09131402090b070f084805090b">[email&#160;protected]</span></a></span> </li>
                            </ul>
                         </div>
                      </div>
@@ -61,7 +61,7 @@
                               </li>
                               <li><a class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}" href="{{route('about')}}">A propos</a></li>
                               <li><a class="{{ Route::currentRouteName() == 'services' ? 'active' : '' }}" href="{{route('services')}}">Services</a></li>
-                              <li><a class="{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog</a></li>
+                              <!-- <li><a class="{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog</a></li> -->
                               <li class="has-sub"><span class="submenu-button"></span>
                                  <a class="{{ Route::currentRouteName() == 'home.products' ? 'active' : '' }}" href="{{route('home.products')}}">Shop</a>
                                  <ul>

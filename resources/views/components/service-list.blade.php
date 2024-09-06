@@ -4,7 +4,7 @@
                <div class="col-md-12">
                   <div class="full">
                      <div class="main_heading text_align_center">
-                        <h2><span>Our Services</span></h2>
+                        <h2><span>Nos prestations</span></h2>
                      </div>
                   </div>
                </div>
